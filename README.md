@@ -1,4 +1,4 @@
-# Scripts using circom and snarkjs
+# Generic scripts using circom and snarkjs
 
 To learn more about `circom`: <https://github.com/iden3/circom>
 
