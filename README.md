@@ -8,6 +8,8 @@ The `circom compiler` version used is: `2.0.3`.
 
 The `snarkjs` version used is: `0.4.19`.
 
+**Note:** All the scripts are inside the `scripts` folder.
+
 To organize all the scripts you can create a `scripts` folder next to the circuit and input file you want to work with, and add all the scripts like this:
 
 ```text
