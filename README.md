@@ -6,7 +6,7 @@ To learn more about `snarkjs`: <https://github.com/iden3/snarkjs>
 
 The `circom compiler` version used is: `2.0.3`.
 
-The `snarkjs` version used is: `0.4.19`.
+The `snarkjs` version used is: `0.6.1`.
 
 **Note:** All the scripts are inside the `scripts` folder.
 
@@ -15,6 +15,7 @@ To organize all the scripts you can create a `scripts` folder next to the circui
 ```text
 ├── scripts
 │   ├── compile.sh
+│   ├── executeFflonk.sh
 │   ├── executeGroth16.sh
 │   ├── executePlonk.sh
 │   ├── generateWitness.sh
@@ -37,7 +38,7 @@ And after that, you can always run:
 ./scripts/<scriptName>.sh
 ```
 
-When you run one of the circom or circom-snarkjs scripts, a build folder will be created with all the generated files inside. You can delete the build folder by running the `removeBuildFolder.sh` file.
+When you run one of the `circom` or `circom-snarkjs` scripts, a build folder will be created with all the generated files inside. You can delete the build folder by running the `removeBuildFolder.sh` file.
 
 ```bash
 ./scripts/removeBuildFolder.sh
@@ -63,17 +64,13 @@ To generate the witness, you can run `generateWitness.sh`
 ./scripts/generateWitness.sh
 ```
 
-When you run a circom script you will see something like this:
+When you run a `circom` script you will see something like this:
 
 ```text
 ├── build
 │   ├── ...
 ├── scripts
-│   ├── compile.sh
-│   ├── executeGroth16.sh
-│   ├── executePlonk.sh
-│   ├── generateWitness.sh
-│   ├── removeBuildFolder.sh
+│   ├── ...
 ├── circuit.circom
 ├── input.json
 ```
@@ -96,7 +93,15 @@ To generate all the necessary files for a zero knowledge application using Plonk
 ./scripts/executePlonk.sh
 ```
 
-When you run one of the circom-snarkjs files, you will see something like this:
+- `executeFflonk.sh`
+
+To generate all the necessary files for a zero knowledge application using Fflonk run `executeFflonk.sh`.
+
+```bash
+./scripts/executeFflonk.sh
+```
+
+When you run a `circom-snarkjs` script, you will see something like this:
 
 ```text
 ├── build
@@ -104,11 +109,7 @@ When you run one of the circom-snarkjs files, you will see something like this:
 ├── ptau
 │   ├── ...
 ├── scripts
-│   ├── compile.sh
-│   ├── executeGroth16.sh
-│   ├── executePlonk.sh
-│   ├── generateWitness.sh
-│   ├── removeBuildFolder.sh
+│   ├── ...
 ├── circuit.circom
 ├── input.json
 ```
