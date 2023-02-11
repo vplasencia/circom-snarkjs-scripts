@@ -58,7 +58,7 @@ snarkjs zkey export solidityverifier build/${CIRCUIT}_final.zkey build/${CIRCUIT
 # Update the solidity version in the Solidity verifier
 sed -i "s/>=0.7.0 <0.9.0;/^0.8.4;/g" build/${CIRCUIT}PlonkVerifier.sol
 # Update the contract name in the Solidity verifier
-sed -i "s/contract PlonkVerifier/contract SudokuPlonkVerifier/g" build/${CIRCUIT}PlonkVerifier.sol
+sed -i "s/contract PlonkVerifier/contract ${CIRCUIT^}PlonkVerifier/g" build/${CIRCUIT}PlonkVerifier.sol
 
 echo "----- Generate and print parameters of call -----"
 # Generate and print parameters of call
