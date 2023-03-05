@@ -4,7 +4,7 @@
 CIRCUIT=sudoku
 
 # Variable to store the number of the ptau file
-PTAU=15
+PTAU=18
 
 # In case there is a circuit name as an input
 if [ "$1" ]; then
